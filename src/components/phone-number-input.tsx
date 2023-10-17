@@ -56,7 +56,7 @@ export default function PhoneNumberInput({
       <div className=" w-full h-12 relative">
         <input
           type="text"
-          className=" w-full h-12 focus:outline-none focus:ring-primary overflow-hidden ring-2 rounded-lg ring-neutral-200 text-sm text-neutral-900 dark:ring-neutral-800 dark:bg-neutral-900 dark:text-neutral-100"
+          className=" w-full h-12 focus:outline-none focus:ring-primary dark:focus:ring-primary overflow-hidden ring-2 rounded-lg ring-neutral-200 text-sm text-neutral-900 dark:ring-neutral-800 dark:bg-neutral-900 dark:text-neutral-100"
           value={number}
           onChange={(e) => {
             const result = e.target.value.replace(/\D/g, "");
@@ -74,7 +74,7 @@ export default function PhoneNumberInput({
                 role="combobox"
                 aria-expanded={open}
                 ref={buttonRef}
-                className=" h-12 border-none transition-none bg-transparent hover:bg-transparent rounded-none dark:bg-neutral-900 dark:hover:bg-neutral-900 font-normal"
+                className=" h-12 border-none transition-none bg-transparent hover:bg-transparent rounded-none dark:bg-transparent dark:hover:bg-transparent font-normal"
               >
                 {countryCode
                   ? countryCodes.find(
