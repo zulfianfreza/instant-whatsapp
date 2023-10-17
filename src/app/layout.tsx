@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     images: ["/logo.png"],
   },
   twitter: { card: "summary_large_image", images: ["/logo.png"] },
+  authors: [
+    {
+      name: "Julian Reza",
+      url: "https://julianreza.com",
+    },
+  ],
 };
 
 export default function RootLayout({
