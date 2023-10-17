@@ -17,7 +17,7 @@ export default async function Page() {
   const data = JSON.parse(file) as ICountryCode[];
 
   return (
-    <div className=" flex flex-col h-screen items-center justify-center w-full bg-white dark:bg-neutral-950">
+    <div className=" flex flex-col h-[100dvh] items-center justify-center w-full bg-white dark:bg-neutral-950">
       <Navbar />
 
       <div className=" flex-1 max-w-md flex flex-col items-center justify-center w-full ">

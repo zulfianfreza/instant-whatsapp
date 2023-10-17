@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
-import PhoneNumberInput from "./phone-number-input";
-import MessageInput from "./message-input";
-import { Button } from "./ui/button";
-import { Send } from "iconsax-react";
 import { ICountryCode } from "@/types";
+import { Send } from "iconsax-react";
 import Link from "next/link";
+import React from "react";
+import MessageInput from "./message-input";
+import PhoneNumberInput from "./phone-number-input";
+import { Button } from "./ui/button";
 
 interface PhoneNumberInputProps {
   countryCodes: ICountryCode[];
@@ -34,7 +34,10 @@ export default function Form({ countryCodes }: PhoneNumberInputProps) {
           target="_blank"
         >
           <span className=" text-white">Send</span>
-          <Send className=" h-5 text-white" variant="Bulk" />
+          <Send
+            className=" h-5 text-white group-hover:animate-send"
+            variant="Bulk"
+          />
         </Link>
       </Button>
     </div>
